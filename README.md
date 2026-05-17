@@ -72,8 +72,8 @@ Jul 2020 – Jan 2022  IT Officer (Apprenticeship) · EGNC
 
 ## GitHub Stats
 
-![Wafi’s GitHub Stats](https://github-readme-stats.vercel.app/api?username=wfspr&show_icons=true&theme=dark&hide_border=true&count_private=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=wfspr&layout=compact&theme=dark&hide_border=true)
+![Wafi’s GitHub Stats](https://github-readme-stats.vercel.app/api?username=wafisupri&show_icons=true&theme=dark&hide_border=true&count_private=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=wafisupri&layout=compact&theme=dark&hide_border=true)
 
 -----
 
