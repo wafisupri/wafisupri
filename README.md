@@ -1,27 +1,87 @@
-Hi, I’m wfspr 👋
-Security Systems Administrator
+# Hi, I’m wfspr 👋
+
+**Security Systems Professional → Frontend Developer**  
 Brunei Darussalam 🇧🇳 · Open to collaboration
 
-About Me
-I work at the intersection of physical security infrastructure and software — managing CCTV, Access Control, and Radio Communication Systems at an industrial facility in Brunei, while actively rebuilding my application or/and software development skills toward modern web.
-My background spans security systems with ISPS(International Ship & Port Facility Security) and PFSP(Port Facility Security Plan) in mind, on-the-job learning on IT operations  on SharePoint, PowerShell, for government internet & intranet with Microsoft consultant, and a Bachelor of Science with Honours in Computer Science — which means I approach code the way I approach systems: methodically, with an eye on reliability and the bigger picture.
+-----
 
-What I'm currently working on is applying technology to security systems automation at work. Leading a team in overhauling legacy security systems from previous main-contractor to preferred system of choice.
+## About Me
 
-Professional Development
-1. Since Mar 2022 – Present
-a. As a Security Systems Associate at BFI (Brunei Fertilizer Industries) Sdn. Bhd., Brunei
-i. Security Systems according to ISPS Code / PFSP
+I work at the intersection of **physical security infrastructure** and **software** — managing CCTV, Access Control, and Radio Communication Systems at an industrial facility in Brunei, while actively rebuilding my frontend development skills toward modern web.
 
-2. From Jul 2020 until Jan 2022
-a. As an IT Officer (Apprenticeship) at EGNC (E-Goverment National Centre), Brunei
-i. Government Web Systems
+My background spans **security systems (ISPS/PFSP)**, **IT operations** (SharePoint, PowerShell, government intranet), and a **Bachelor of Science with Honours in Computer Science** — which means I approach code the way I approach systems: methodically, with an eye on reliability and the bigger picture.
 
-3. From 2016 until 2018
-a. Bachelor of Science with Honours in Computer Science
+Currently building toward production-ready **React** and **Next.js** work. Running **Teratak DDSWAF Enterprise** as a side entity for tech and digital projects.
 
-Certifications & Training
-	•	ICS-100 / ICS-200 (Incident Command System)
-	•	ISPS / PFSP (Port Facility Security)
-	•	ISO 45001 (Occupational Health & Safety)
-	•	CCTV & Security Systems Expert (CSE)
+-----
+
+## Tech Stack
+
+### Currently Working With
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+
+### Background & Tools
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+![SharePoint](https://img.shields.io/badge/SharePoint-0078D4?style=flat-square&logo=microsoftsharepoint&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+-----
+
+## What I’m Working On
+
+- 🔨 Building my frontend portfolio with **React + Next.js + Tailwind**
+- 📚 Deepening JavaScript fundamentals (ES6+, DOM, async)
+- 🌐 Developing web projects under **Teratak DDSWAF Enterprise**
+- 🔐 Applying tech to security systems automation at work
+
+-----
+
+## Professional Background
+
+```
+Mar 2022 – Present   Security Systems Associate · BFI Sdn. Bhd., Brunei
+                     CCTV · Access Control · Remote Control Systems
+                     ISPS/PFSP Compliance · ISO 45001
+
+Jul 2020 – Jan 2022  IT Officer (Apprenticeship) · EGNC
+                     PowerShell · SharePoint · Government Web Systems
+
+2016 – 2018          BSc (Hons) Computer Science
+```
+
+-----
+
+## Certifications & Training
+
+- ICS-100 / ICS-200 (Incident Command System)
+- ISPS / PFSP (Port Facility Security)
+- ISO 45001 (Occupational Health & Safety)
+- CCTV & Security Systems Expert (CSE) · IIPD Global, Dubai
+
+-----
+
+## GitHub Stats
+
+![Wafi’s GitHub Stats](https://github-readme-stats.vercel.app/api?username=wfspr&show_icons=true&theme=dark&hide_border=true&count_private=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=wfspr&layout=compact&theme=dark&hide_border=true)
+
+-----
+
+## Let’s Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/wafisupri)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:wafi.supri@gmail.com)
+
+-----
+
+*“Systems thinking applied to software — one commit at a time.”*
