@@ -7,11 +7,11 @@ Brunei Darussalam 🇧🇳 · Open to collaboration
 
 ## About Me
 
-I work at the intersection of **physical security infrastructure** and **software** — managing CCTV, Access Control, and Radio Communication Systems at an industrial facility in Brunei, while actively rebuilding my frontend development skills toward modern web.
+I work at the intersection of **physical security infrastructure** & **software** — managing CCTV System, Access Control System (ACS) & Radio Communication System (RCS) at an industrial facility in Brunei, while actively rebuilding my frontend development skills toward modern web.
 
-My background spans **security systems (ISPS/PFSP)**, **IT operations** (SharePoint, PowerShell, government intranet), and a **Bachelor of Science with Honours in Computer Science** — which means I approach code the way I approach systems: methodically, with an eye on reliability and the bigger picture.
+My background spans **security systems (ISPS/PFSP)**, **IT operations** (SharePoint, PowerShell, government intranet) & a **Bachelor of Science with Honours in Computer Science** — which means I approach code the way I approach systems: methodically, with an eye on reliability & the bigger picture.
 
-Currently building toward production-ready **React** and **Next.js** work. Running **Teratak DDSWAF Enterprise** as a side entity for tech and digital projects.
+Currently building toward production-ready **React** & **Next.js** work. Running **Teratak DDSWAF Enterprise** as a side entity for tech & digital projects.
 
 -----
 
@@ -50,22 +50,24 @@ Currently building toward production-ready **React** and **Next.js** work. Runni
 
 ```
 Mar 2022 – Present   Security Systems Associate · BFI Sdn. Bhd., Brunei
-                     CCTV · Access Control · Remote Control Systems
+                     CCTV · Access Control · Radio Communication Systems
                      ISPS/PFSP Compliance · ISO 45001
 
-Jul 2020 – Jan 2022  IT Officer (Apprenticeship) · EGNC
+Jul 2020 – Jan 2022  IT Officer (I-Ready Apprenticeship) · EGNC, Brunei
                      PowerShell · SharePoint · Government Web Systems
 
-2016 – 2018          BSc (Hons) Computer Science
+2016 – 2018          BSc (Hons) in Computer Science
 ```
 
 -----
 
 ## Certifications & Training
 
-- ICS-100 / ICS-200 (Incident Command System)
-- ISPS / PFSP (Port Facility Security)
-- ISO 45001 (Occupational Health & Safety)
+- ICS-100 (Incident Command System) : Introduction to Incident Command· Blue Petrel Consulting
+- ICS-200 (Incident Command System) : Single Resources & Initial Action Incidents · Blue Petrel Consulting
+- ISPS (International Ship and Port Facility Security) · Bureau Veritas
+- PFSP (Port Facility Security Plan) · Bureau Veritas
+- ISO 45001:2018 (HSSE OHSMS) · Arete Solutions
 - CCTV & Security Systems Expert (CSE) · IIPD Global, Dubai
 
 -----
