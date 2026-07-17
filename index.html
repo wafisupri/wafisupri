@@ -101,10 +101,6 @@ body {
     repeating-linear-gradient(180deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 3px);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
-}
-
 a { color: inherit; }
 a:focus-visible, button:focus-visible {
   outline: 2px solid var(--accent);
@@ -154,8 +150,35 @@ a:focus-visible, button:focus-visible {
 
 /* ---- hero ---- */
 .hero {
-  padding: 72px 0 44px;
+  position: relative;
+  overflow: hidden;
+  padding: 96px 0 60px;
   border-bottom: 1px solid var(--line);
+  isolation: isolate;
+}
+.hero-scene-wrap {
+  position: absolute;
+  inset: -12% -6%;
+  z-index: -1;
+  animation: hero-zoom 26s ease-in-out infinite alternate;
+  will-change: transform;
+}
+#hero-scene {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(60% 55% at 30% 30%, transparent 0%, var(--bg) 92%);
+}
+@keyframes hero-zoom {
+  0%   { transform: scale(1) translateY(0); }
+  100% { transform: scale(1.1) translateY(-1.5%); }
 }
 .hero .kicker {
   font-family: var(--font-mono);
@@ -341,6 +364,17 @@ footer {
   .hero { padding-top: 52px; }
   .pullquote, .signal { padding: 26px 20px; }
 }
+
+/* ---- scroll reveal ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 1.5s cubic-bezier(0.16, 1, 0.3, 1), transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 </style>
 
 <div class="masthead">
@@ -351,6 +385,9 @@ footer {
 
 <div class="frame">
   <section class="hero">
+    <div class="hero-scene-wrap" aria-hidden="true">
+      <canvas id="hero-scene"></canvas>
+    </div>
     <p class="kicker">About — Wafi</p>
     <h1>I watch cameras for a living. Lately I write the <span>software that watches them back.</span></h1>
     <p class="sub">Security Systems Administrator by title. Self-taught, AI-assisted builder of the internal tools that title never came with.</p>
@@ -360,14 +397,14 @@ footer {
     </div>
   </section>
 
-  <section class="feed">
+  <section class="feed reveal">
     <div class="feed-tag"><span class="n">FEED 01</span>Control room, 02:14</div>
     <div class="feed-body">
       <p>The wall in front of me is forty-one screens wide. Loading bay, admin block, the perimeter fence in six segments, a flare stack glowing white in infrared. Somewhere in there is the one frame that matters tonight — a VVIP convoy is fifteen minutes out, and my job is to notice that frame before anything happens in it. This is what a Security Systems Administrator actually does at a plant like Brunei Fertilizer Industries: not watch, exactly. Read forty-one storyless pictures for the one that's about to become a story.</p>
     </div>
   </section>
 
-  <section class="feed">
+  <section class="feed reveal">
     <div class="feed-tag"><span class="n">FEED 02</span>What nobody asked</div>
     <div class="feed-body">
       <p>Here's the part that doesn't fit on an org chart. I finished a BSc (Hons) in Computer Science in 2018, after years of diplomas in computing and systems development before it — and then took a job watching camera feeds. Not because the degree didn't work out. Because the first employer to say yes ran a cinema, and I was mid-shift running a film reel and a booking database, both, when I noticed I cared more about why the database did what it did than about the reel.</p>
@@ -375,7 +412,7 @@ footer {
     </div>
   </section>
 
-  <section class="feed">
+  <section class="feed reveal">
     <div class="feed-tag"><span class="n">FEED 03</span>Promotion, 2024</div>
     <div class="feed-body">
       <p>Two years into HSSE at Brunei Fertilizer Industries, I was promoted from CCTV Administrator to CCTV Associate. On paper, a title bump. In practice, the job had quietly become bigger than "CCTV" ever described — cameras are just the system BFI happens to run most of its security through, so managing them means managing most of physical security: access sweeps, VVIP logistics, incident response, the whole apparatus, with a camera feed as the interface.</p>
@@ -383,25 +420,25 @@ footer {
     </div>
   </section>
 
-  <div class="pullquote">
+  <div class="pullquote reveal">
     <p>A person who watches cameras for a living, and quietly writes the software that watches them back.</p>
   </div>
 
-  <section class="feed">
+  <section class="feed reveal">
     <div class="feed-tag"><span class="n">FEED 04</span>The build</div>
     <div class="feed-body">
       <p>So I built it myself. Not by going back to school, not by waiting for a developer to get assigned to HSSE — by sitting down with the languages I already had and an AI coding partner, and shipping the tool nobody had scoped. I still hold the title Administrator of Security Systems. What I actually do most weeks is closer to a systems architect who also happens to run the physical security desk.</p>
     </div>
   </section>
 
-  <section class="feed">
+  <section class="feed reveal">
     <div class="feed-tag"><span class="n">FEED 05</span>Running now</div>
     <div class="feed-body">
       <p>That dashboard has a name now — I call it Guardian — live alongside the quarterly town hall decks I build from scratch each cycle, the access-and-incident reporting nobody else was going to automate, and a home server build queued up next to it in the same spare hours. None of it is on the HSSE org chart. All of it is the actual work.</p>
     </div>
   </section>
 
-  <section class="signal">
+  <section class="signal reveal">
     <p class="kicker">Signal out</p>
     <p>If you run security operations quietly begging for a dashboard, or you build software in the cracks of a job that was never supposed to include it, we're already speaking the same language. I post about what I'm building — Guardian, the next system, whatever breaks and gets fixed late — mostly to keep myself honest about shipping.</p>
     <div class="cta-row">
@@ -416,3 +453,122 @@ footer {
   <span>Security Systems / Vibe Coding</span>
   <span>Daerah Tutong, Brunei Darussalam</span>
 </footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---- scroll reveal ---- */
+  var revealEls = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
+  if (!("IntersectionObserver" in window)) {
+    revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
+    revealEls.forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---- hero canvas scene: drifting monitoring grid ---- */
+  var canvas = document.getElementById("hero-scene");
+  if (!canvas || !canvas.getContext) return;
+  var ctx = canvas.getContext("2d");
+  var wrap = canvas.parentElement;
+
+  function themeColor(name, fallback) {
+    var v = getComputedStyle(document.documentElement).getPropertyValue(name);
+    return v && v.trim() ? v.trim() : fallback;
+  }
+
+  var W = 0, H = 0, DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+  function resize() {
+    var rect = wrap.getBoundingClientRect();
+    W = Math.max(rect.width, 1);
+    H = Math.max(rect.height, 1);
+    canvas.width = Math.round(W * DPR);
+    canvas.height = Math.round(H * DPR);
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  }
+  resize();
+  window.addEventListener("resize", resize);
+
+  var feeds = [0, 1, 2, 3].map(function (i) {
+    return {
+      seed: i * 37.7 + 11,
+      w: 0.16 + (i % 2) * 0.06,
+      h: 0.14 + ((i + 1) % 3) * 0.03
+    };
+  });
+
+  function draw(t) {
+    var line = themeColor("--line", "#262b26");
+    var accent = themeColor("--accent", "#cf9a52");
+    var ink = themeColor("--ink", "#eef0ea");
+
+    ctx.clearRect(0, 0, W, H);
+
+    /* faint scanning grid */
+    ctx.strokeStyle = line;
+    ctx.globalAlpha = 0.55;
+    ctx.lineWidth = 1;
+    var cell = Math.max(36, Math.min(W, H) / 14);
+    for (var x = 0; x <= W; x += cell) {
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(x, H);
+      ctx.stroke();
+    }
+    for (var y = 0; y <= H; y += cell) {
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(W, y);
+      ctx.stroke();
+    }
+
+    /* drifting "camera feed" rectangles */
+    feeds.forEach(function (f, i) {
+      var cx = W * (0.5 + 0.32 * Math.sin(t * 0.00007 + f.seed));
+      var cy = H * (0.5 + 0.28 * Math.cos(t * 0.00009 + f.seed * 1.3));
+      var w = W * f.w;
+      var h = H * f.h;
+      var pulse = 0.5 + 0.5 * Math.sin(t * 0.0006 + f.seed);
+
+      ctx.globalAlpha = 0.16 + pulse * 0.12;
+      ctx.strokeStyle = accent;
+      ctx.lineWidth = 1.5;
+      ctx.strokeRect(cx - w / 2, cy - h / 2, w, h);
+
+      ctx.globalAlpha = 0.05;
+      ctx.fillStyle = ink;
+      ctx.fillRect(cx - w / 2, cy - h / 2, w, h);
+
+      /* corner ticks, like a targeting reticle */
+      var tick = 8;
+      ctx.globalAlpha = 0.35 + pulse * 0.25;
+      ctx.strokeStyle = accent;
+      ctx.beginPath();
+      ctx.moveTo(cx - w / 2, cy - h / 2 + tick);
+      ctx.lineTo(cx - w / 2, cy - h / 2);
+      ctx.lineTo(cx - w / 2 + tick, cy - h / 2);
+      ctx.moveTo(cx + w / 2 - tick, cy - h / 2);
+      ctx.lineTo(cx + w / 2, cy - h / 2);
+      ctx.lineTo(cx + w / 2, cy - h / 2 + tick);
+      ctx.stroke();
+    });
+
+    ctx.globalAlpha = 1;
+  }
+
+  function loop(t) {
+    draw(t);
+    window.requestAnimationFrame(loop);
+  }
+  window.requestAnimationFrame(loop);
+})();
+</script>
